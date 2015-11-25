@@ -41,7 +41,7 @@ def editMenuItem(restaurant_id, menu_id):
 		session.commit()
 		return redirect(url_for('listMenuItems', restaurant_id=restaurant_id))
 	else:
-		return render_template('editmenuitem.html', restaurant_id=restaurant_id, item=item)
+		return render_template('editmenuitem.html', item=item)
 
 @app.route('/restaurants/<int:restaurant_id>/<int:menu_id>/delete/', methods=['GET', 'POST'])
 def deleteMenuItem(restaurant_id, menu_id):
@@ -51,7 +51,7 @@ def deleteMenuItem(restaurant_id, menu_id):
 		session.commit()
 		return redirect(url_for('listMenuItems', restaurant_id=restaurant_id))
 	else:
-		return render_template('deletemenuitem.html', restaurant_id=restaurant_id, item=item)
+		return render_template('deletemenuitem.html', item=item)
 		
 if __name__ == '__main__':
 	app.debug = True
