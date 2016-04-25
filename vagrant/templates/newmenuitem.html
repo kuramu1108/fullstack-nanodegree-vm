@@ -1,10 +1,17 @@
 <html>
+	<head>
+	<link rel=stylesheet type="text/css" href="{{url_for('static', filename='style.css')}}">
+	</head>
 	<body>
 		<h1> New Menu Item</h1>
-		<form action="{{url_for('newMenuItem', restaurant_id=restaurant_id)}}" method="post">
-			<p>Name:</p>
-			<input type="text" size='30' name='name'>
-			<input type='submit' value='create'>
-		</form>
+		<div class = 'pane'>
+			<form action="{{url_for('newMenuItem', restaurant_id=restaurant_id)}}" method="post">
+				<dl>
+					<dt>Name:</dt>
+				</dl>
+				<input type="text" size='30' name='name'>
+				<input type='submit' value='create'>
+			</form>
+		</div>
 	</body>
 </html>
