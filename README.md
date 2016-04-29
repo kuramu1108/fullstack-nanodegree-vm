@@ -14,4 +14,4 @@ change the directory to the vagrant folder, then execute _vagrant up_ to launch 
 - execute _exit_ to log out at the shell prompt.  
 - execute _vagrant halt_ turn the virtual machine off (without deleting anything). If you do this, you'll need to run vagrant up again before you can log into it. 
 
-[full instruction on Udacity](https://www.udacity.com/wiki/ud088/vagrant)
+- [full instruction on Udacity](https://www.udacity.com/wiki/ud088/vagrant)
